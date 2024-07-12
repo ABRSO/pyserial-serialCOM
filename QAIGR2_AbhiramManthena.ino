@@ -4,7 +4,7 @@ void setup() {
 
 void loop() {
   if (Serial.available()) {
-    String message = Serial.readStringUntil('\n'); // Read the message until newline character occurs
-    Serial.println(message); // Sends the received message back
+    String message = Serial.readStringUntil('\n');
+    Serial.println(message);
   }
 }
